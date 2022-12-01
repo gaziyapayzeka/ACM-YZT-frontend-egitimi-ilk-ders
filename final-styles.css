@@ -1,0 +1,140 @@
+nav{
+    width: 100%;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60px;
+    position: fixed;
+    z-index: 1; /* bunu eklemezsek bazı elemanlar üstüne çıkabilir. */
+}
+nav > .nav__item{
+    width: 24vw;
+    height: 45px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+nav > .nav__item:hover{
+    background-color: white;
+    cursor: pointer;
+    color: black;
+}
+nav > .nav__item > a{
+    width: 24vw;
+    text-align: center;
+}
+
+.main_image_content{
+    width: 100%;
+    height: 505px;
+    background-image: url(./images/coffeehouse.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+h1{
+    text-align: center;
+    line-height: 160%;
+    font-size: 68px;
+    margin-top: 100px;
+}
+.main_image_content__bottom{
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    justify-self: flex-end;
+}
+
+.black_box{
+    background-color: black;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    color: white;
+    width: fit-content;
+}
+
+.small_text{
+    font-size: 14px;
+}
+
+.main_content_wrapper{
+    width: 45%;
+}
+img{
+    width: 100%;
+}
+.header{
+    letter-spacing: 10px;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+.quote{
+    background-color: #f1f1f1;
+    padding: 30px 10px 30px 40px;
+    border-left: #9e9e9e 5px solid;
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+
+#menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+#where{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+input{
+    height: 40px;
+    border: 1px gray solid;
+    outline: none;
+    font-family: "Inconsolata", sans-serif;
+    font-size: 20px;
+    padding-left: 10px;
+}
+input:hover{
+    border: 1px black solid;
+}
+input:focus{
+    border-color: black;
+    outline: 1px solid black;
+}
+button{
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    font-family: "Inconsolata", sans-serif;
+    font-size: 24px;
+    width:fit-content;
+    padding: 10px 15px 10px 15px;
+    cursor: pointer;
+}
+button:hover{
+    color: black;
+    background-color: rgb(198, 198, 198);
+}
